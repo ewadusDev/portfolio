@@ -2,12 +2,12 @@ import { RxDownload } from "react-icons/rx";
 
 const Header = () => {
   return (
-    <header className="lg:h-[calc(100vh-64px)] ">
+    <header className=" lg:h-[calc(100vh-64px)] ">
       <div className="h-full flex flex-col lg:px-0 lg:flex-row ">
         {/* Left */}
-        <div className="flex flex-col justify-between gap-20 lg:gap-28 pt-5 pb-20 lg:pb-28 lg:basis-2/3 lg:p-12 px-2 sm:px-4 ">
-          <div className="flex flex-col gap-6">
-            <h1 className="font-extrabold text-7xl  sm:text-[196px] ">
+        <div className="flex flex-col justify-between gap-16 lg:gap-16 pt-5 pb-20 lg:pb-28 lg:basis-2/3 lg:p-12 px-2 sm:px-4">
+          <div className="flex flex-col gap-2  lg:gap-6 ">
+            <h1 className="font-extrabold text-7xl lg:text-[196px] ">
               Ruk
               <br /> Keosung
             </h1>
@@ -15,7 +15,7 @@ const Header = () => {
               QA FullStack Engineer{" "}
             </h2>
           </div>
-          <h3 className="text-xl lg:text-4xl font-normal">
+          <h3 className="text-xl lg:text-4xl ">
             Passionate about software testing, I enjoy building and creating
             interactive experiences.
           </h3>
@@ -30,7 +30,7 @@ const Header = () => {
           </div>
         </div>
         {/* Right */}
-        <div className="w-full h-[calc(100vh/2)] md:h-[calc(100vh)] lg:h-[calc(100vh-64px)] lg:basis-1/3 bg-gray-300"></div>
+        <div className="w-full h-[calc(100vh/2)] md:h-[calc(100vh)] lg:h-[calc(100vh-64px)] lg:basis-1/3 bg-gray-300" />
       </div>
     </header>
   );
