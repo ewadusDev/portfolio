@@ -8,14 +8,14 @@ import Skill from "@/components/Skill";
 
 export default function Home() {
   return (
-    <>
+    <main className="">
       <Navbar />
       <Header />
+      <Skill />
       <Showcase />
       <About />
-      <Skill />
       <Education />
       <Footer />
-    </>
+    </main>
   );
 }
