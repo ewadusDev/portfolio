@@ -45,7 +45,7 @@ const Education = () => {
 
             <div className="flex flex-row mt-14 xl:mt-40 lg:h-64">
               <div className="bg-gray-500 basis-1/4 w-10 " />
-              <p className="basis-3/4 px-5 text-sm sm:text-xl xl:text-3xl text-gray-400">
+              <p className="text-justify basis-3/4 px-5 text-sm sm:text-xl xl:text-3xl text-gray-400">
                 Studying Geography at university offers a deep understanding of
                 the physical and human processes shaping our world. From
                 exploring environmental challenges to analyzing spatial data
