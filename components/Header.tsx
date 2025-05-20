@@ -12,7 +12,7 @@ const Header = () => {
               <br /> Keosung
             </h1>
             <h2 className="text-3xl sm:text-7xl font-bold mt-4">
-              QA FullStack Engineer{" "}
+              FullStack QA Engineer{" "}
             </h2>
           </div>
           <h3 className="text-xl lg:text-4xl ">
