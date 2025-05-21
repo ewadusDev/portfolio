@@ -1,8 +1,7 @@
 "use client";
 import { educations } from "@/data/const";
 
-import Image from "next/image";
-import CustomCarousel from "./CustomCarousel";
+import EducationCarousel from "./EducationCarousel";
 
 const Education = () => {
   return (
@@ -14,7 +13,7 @@ const Education = () => {
           </h3>
         </div>
         {/* slide */}
-        <CustomCarousel data={educations} />
+        <EducationCarousel data={educations} />
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ import {
 import { Education } from "@/types/data";
 import Image from "next/image";
 
-const CustomCarousel = ({ data }: { data: Education[] }) => {
+const EducationCarousel = ({ data }: { data: Education[] }) => {
   return (
     <Carousel
       className="w-full h-full flex flex-col"
@@ -77,4 +77,4 @@ const CustomCarousel = ({ data }: { data: Education[] }) => {
     </Carousel>
   );
 };
-export default CustomCarousel;
+export default EducationCarousel;

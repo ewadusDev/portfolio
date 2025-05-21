@@ -15,7 +15,7 @@ const Navbar = () => {
   const [isToggled, setIsToggled] = useState<boolean>(false);
 
   return (
-    <nav className="flex w-full px-2 lg:px-6 h-16 items-center border-b">
+    <nav className="flex w-full px-2 lg:px-6 h-16 items-center border-b fixed bg-white z-50">
       <div className="flex justify-between w-full h-full items-center">
         <h6 className="text-2xl font-extrabold">RK.</h6>
         <ul className={`${isToggled ? "flex" : "hidden"} gap-7 hidden sm:flex`}>
