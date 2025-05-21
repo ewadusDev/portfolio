@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Education } from "@/types/data";
+import Image from "next/image";
 
 const CustomCarousel = ({ data }: { data: Education[] }) => {
   return (
@@ -15,7 +16,7 @@ const CustomCarousel = ({ data }: { data: Education[] }) => {
       className="w-full h-full flex flex-col"
       plugins={[
         Autoplay({
-          delay: 3000,
+          delay: 9000,
         }),
       ]}
     >
@@ -32,7 +33,7 @@ const CustomCarousel = ({ data }: { data: Education[] }) => {
         {data.map((edu, index) => {
           return (
             <CarouselItem key={index} className="w-1">
-              <div className="flex flex-col">
+              <div className="flex flex-col px-3">
                 {/* title */}
                 <div className="flex flex-row  py-7 ">
                   <div className="flex items-start justify-center basis-1/4 ">
@@ -56,8 +57,13 @@ const CustomCarousel = ({ data }: { data: Education[] }) => {
                 </div>
                 {/* logo */}
                 <div className="flex mt-4 items-center">
-                  <div className="bg-gray-500 basis-1/4 h-56">
-                    {/* <Image/>  */}
+                  <div className=" basis-1/4 h-56 object-contain">
+                    <Image
+                      width={500}
+                      height={500}
+                      alt={edu.name}
+                      src={edu.logo}
+                    />
                   </div>
                   <p className="text-justify basis-3/4 px-5 text-sm sm:text-lg xl:text-3xl text-gray-400">
                     {edu.description}
