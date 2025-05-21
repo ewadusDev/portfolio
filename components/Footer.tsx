@@ -2,11 +2,11 @@ const Footer = () => {
   return (
     <footer className=" bg-[#0AB274] text-white">
       <div className="flex flex-col lg:flex-row ">
-        <div className="border-b border-white lg:border-r lg:px-8 py-4 ">
+        <div className="border-b border-white lg:border-b-0 lg:border-r lg:px-8 py-4 ">
           <p className="text-9xl font-bold py-4 px-4">RK.</p>
         </div>
         <div>
-          <div className="flex flex-col px-4 py-5 gap-2">
+          <div className="flex flex-col lg:flex-row px-4 py-5 gap-2 lg:gap-10 w-full h-full lg:justify-center lg:items-center">
             <div>
               <p className="text-xl">Contact</p>
             </div>

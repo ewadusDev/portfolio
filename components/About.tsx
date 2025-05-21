@@ -1,10 +1,10 @@
 const About = () => {
   return (
-    <section className="h-[calc(100vh)] border">
+    <section className="h-[calc(100vh)] border-t">
       <div className="flex flex-col lg:flex-row w-full h-full">
         {/* left */}
         <div className="basis-2/4 py-14">
-          <p className="text-center text-6xl xl:text-9xl ">I' AM</p>
+          <p className="px-6 text-7xl xl:text-9xl lg:p-14 ">I' AM</p>
           <p className="text-justify px-3 mt-4 text-xl xl:text-3xl">
             a Senior QA Automation Engineer with strong expertise in building
             and maintaining scalable test automation frameworks to ensure

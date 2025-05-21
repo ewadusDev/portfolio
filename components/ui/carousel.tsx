@@ -183,7 +183,7 @@ function CarouselPrevious({
     <button
       data-slot="carousel-previous"
       className={cn(
-        "text-8xl ",
+        "text-6xl w-full h-36 border-b flex items-center justify-center",
         orientation === "horizontal"
           ? "top-1/2 -left-12"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -211,7 +211,7 @@ function CarouselNext({
     <button
       data-slot="carousel-next"
       className={cn(
-        "text-8xl ",
+        "text-6xl w-full h-36 border-b border-l flex items-center justify-center",
         orientation === "horizontal"
           ? "top-1/2 -right-12"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",

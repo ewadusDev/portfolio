@@ -10,7 +10,7 @@ export const educations = [
       "Studying Geography at university offers a deep understanding of the physical and human processes shaping our world. From exploring environmental challenges to analyzing spatial data through GIS, this discipline equips students with the skills to address global issues and contribute to sustainable development.",
   },
   {
-    name: "SuperMap Company",
+    name: "SuperMap Co.",
     major: "GIS Workshop",
     location: "China",
     role: "Attendee",
