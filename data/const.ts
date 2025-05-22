@@ -137,43 +137,80 @@ export const educations = [
 
 export const skills = [
   {
-    icons: [],
+    icons: [
+      "/skills/playwright-icon.svg",
+      "/skills/cypress-icon.svg",
+      "/skills/robot-icon.svg",
+    ],
     name: "E2E Testing",
     description: "Playwright, Cypress, Robot Framework, Puppeteer",
   },
   {
-    icons: [],
+    icons: ["/skills/k6-icon.svg"],
     name: "Performance Testing",
     description: "K6 Grafana",
   },
   {
-    icons: [],
+    icons: [
+      "/skills/docker-icon.svg",
+      "/skills/jenkins-icon.svg",
+      "/skills/kubernetes-icon.svg",
+    ],
     name: "DevOps",
     description: "Docker, Jenkins, Kubernetes",
   },
   {
-    icons: [],
+    icons: [
+      "/skills/ts-icon.svg",
+      "/skills/js-icon.svg",
+      "/skills/python-icon.svg",
+    ],
     name: "Programing Language",
     description: "Typescript, Javascript, Python",
   },
   {
-    icons: [],
+    icons: [
+      "/skills/next-icon.svg",
+      "/skills/react-icon.svg",
+      "/skills/html-icon.svg",
+      "/skills/css-icon.svg",
+      "/skills/tailwind-icon.svg",
+    ],
     name: "Frontend",
     description: "Nextjs, React, HTML, CSS, Tailwindcss",
   },
   {
-    icons: [],
+    icons: ["/skills/node-icon.svg"],
     name: "Backend",
     description: "NodeJS",
   },
   {
-    icons: [],
+    icons: [
+      "/skills/mongo-icon.svg",
+      "/skills/postgres-icon.svg",
+      "/skills/minio-icon.svg",
+      "/skills/firebase-icon.svg",
+    ],
     name: "Database",
     description: "MongoDB, Postgres, Minio, Firebase",
   },
   {
-    icons: [],
+    icons: ["/skills/git-icon.svg"],
+    name: "Code Version Control",
+    description: "Git",
+  },
+  {
+    icons: [
+      "/skills/digitalo-icon.svg",
+      "/skills/gcp-icon.svg",
+      "/skills/aws-icon.svg",
+    ],
+    name: "Cloud",
+    description: "  Digital Ocean,CGP, AWS",
+  },
+  {
+    icons: ["/skills/linux-icon.svg", "/skills/figma-icon.svg"],
     name: "Other",
-    description: "Linux, Git, Figma, CGP, Digital Ocean, AWS",
+    description: "Linux,Figma",
   },
 ];
