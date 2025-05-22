@@ -3,7 +3,7 @@ import SkillCarousel from "./SkillCarousel";
 
 const Skill = () => {
   return (
-    <section className="bg-black text-white">
+    <section className="bg-black text-white  ">
       <div className="flex flex-col lg:flex-row">
         {/* Left */}
         <div className="border-b border-gray-300 lg:basis-2/5 lg:h-96 lg:border-r">
@@ -12,7 +12,7 @@ const Skill = () => {
           </h2>
         </div>
         {/* Right */}
-        <div className="lg:basis-4/5">
+        <div className="lg:basis-4/5 h-screen overflow-auto">
           <div className="hidden lg:block w-full h-96 border-b border-gray-300" />
           {skills.map((skill, index) => {
             return (

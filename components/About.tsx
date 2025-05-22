@@ -5,7 +5,7 @@ const About = () => {
         {/* left */}
         <div className="basis-2/4 py-14">
           <p className="px-6 text-7xl xl:text-9xl lg:p-14 ">I' AM</p>
-          <p className="text-justify px-3 mt-4 text-xl xl:text-3xl">
+          <p className="text-justify px-3 mt-4 text-xl 2xl:text-3xl">
             a Senior QA Automation Engineer with strong expertise in building
             and maintaining scalable test automation frameworks to ensure
             software quality across web and backend systems. With a
