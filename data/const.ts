@@ -134,3 +134,46 @@ export const educations = [
       "Next.js by mikelopster Channel\nReactJS by Patiphan Phengpao Channel\nสอน Workshop Camping Next.js 15 By รอยไถ พัฒนา Channel\nNext.js with React Testing Library, Jest, TypeScript By Dave Gray\nAdvanced TypeScript Types for Next.js: The Complete Guide to Elevated Web Development By HuXn WebDev",
   },
 ];
+
+export const skills = [
+  {
+    icons: [],
+    name: "E2E Testing",
+    description: "Playwright, Cypress, Robot Framework, Puppeteer",
+  },
+  {
+    icons: [],
+    name: "Performance Testing",
+    description: "K6 Grafana",
+  },
+  {
+    icons: [],
+    name: "DevOps",
+    description: "Docker, Jenkins, Kubernetes",
+  },
+  {
+    icons: [],
+    name: "Programing Language",
+    description: "Typescript, Javascript, Python",
+  },
+  {
+    icons: [],
+    name: "Frontend",
+    description: "Nextjs, React, HTML, CSS, Tailwindcss",
+  },
+  {
+    icons: [],
+    name: "Backend",
+    description: "NodeJS",
+  },
+  {
+    icons: [],
+    name: "Database",
+    description: "MongoDB, Postgres, Minio, Firebase",
+  },
+  {
+    icons: [],
+    name: "Other",
+    description: "Linux, Git, Figma, CGP, Digital Ocean, AWS",
+  },
+];

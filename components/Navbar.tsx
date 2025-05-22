@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
 
         {isToggled && (
-          <div className="absolute w-full h-full top-0 left-0 bg-white">
+          <div className="absolute w-full h-full top-0 left-0 bg-white z-50">
             <div className="px-6 h-16 flex  items-center justify-end">
               <Button
                 variant={"outline"}
@@ -49,7 +49,7 @@ const Navbar = () => {
                 <RxCross1 />
               </Button>
             </div>
-            <ul className="flex flex-col justify-start items-center gap-5 pt-7">
+            <ul className="flex flex-col justify-start items-center gap-5 pt-7 bg-white z-50 h-screen ">
               {menuList.map((item, index) => {
                 return (
                   <li
