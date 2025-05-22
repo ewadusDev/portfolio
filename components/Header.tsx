@@ -2,7 +2,7 @@ import { RxDownload } from "react-icons/rx";
 
 const Header = () => {
   return (
-    <header className="h-screen">
+    <header className="h-screen" id="header">
       <div className="h-full flex flex-col lg:px-0 lg:flex-row ">
         {/* Left */}
         <div className="flex flex-col justify-between gap-16 lg:gap-10 xl:gap-16 pt-5 pb-20 lg:pb-28 lg:basis-2/3 lg:p-12 px-2 sm:px-4 ">
