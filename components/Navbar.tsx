@@ -5,11 +5,11 @@ import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { Button } from "./ui/button";
 
 const menuList = [
-  { name: "About", href: "#" },
-  { name: "Skills", href: "#" },
-  { name: "Showcase", href: "#" },
-  { name: "Education", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Showcase", href: "#showcase" },
+  { name: "Education", href: "#education" },
+  { name: "Contact", href: "#contact" },
 ];
 const Navbar = () => {
   const [isToggled, setIsToggled] = useState<boolean>(false);

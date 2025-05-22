@@ -3,7 +3,7 @@ import SkillCarousel from "./SkillCarousel";
 
 const Skill = () => {
   return (
-    <section className="bg-black text-white">
+    <section className="bg-black text-white" id="skills">
       <div className="flex flex-col lg:flex-row">
         {/* Left */}
         <div className="border-b border-gray-300 lg:basis-2/5 lg:h-96 lg:border-r">
