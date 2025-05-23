@@ -214,3 +214,111 @@ export const skills = [
     description: "Linux,Figma",
   },
 ];
+
+export const mappyData = ["/showcase/imageA.jpg", "/showcase/imageA.jpg"];
+
+export const mappyTechStack = [
+  {
+    name: "frontend",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "react-icons",
+      "leaflet",
+      "React-Leaflet",
+    ],
+  },
+  {
+    name: "backend",
+    tech: ["Next API Routes", "NextAuth", "Middleware"],
+  },
+  {
+    name: "testing",
+    tech: ["Jest", "Playwright"],
+  },
+];
+
+export const mappySourceCode = [
+  {
+    name: "github",
+    icon: "/sourcecode/github.png",
+    href: "https://github.com/ewadusDev/mappy.git",
+  },
+  {
+    name: "docker",
+    icon: "/sourcecode/docker.png",
+    href: "https://hub.docker.com/r/ewadus/mappy",
+  },
+];
+
+export const todoData = ["/showcase/imageA.jpg", "/showcase/imageA.jpg"];
+
+export const todoTechStack = [
+  {
+    name: "frontend",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "react-icons",
+      "leaflet",
+      "React-Leaflet",
+    ],
+  },
+  {
+    name: "backend",
+    tech: ["Next API Routes", "NextAuth", "Middleware"],
+  },
+  {
+    name: "testing",
+    tech: ["Jest", "Playwright"],
+  },
+];
+
+export const todoSourceCode = [
+  {
+    name: "github",
+    icon: "/sourcecode/github.png",
+    href: "https://github.com/ewadusDev/mappy.git",
+  },
+  {
+    name: "docker",
+    icon: "/sourcecode/docker.png",
+    href: "https://hub.docker.com/r/ewadus/mappy",
+  },
+];
+
+export const iMovieData = ["/showcase/imageA.jpg", "/showcase/imageA.jpg"];
+
+export const iMovieTechStack = [
+  {
+    name: "frontend",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "react-icons",
+      "leaflet",
+      "React-Leaflet",
+    ],
+  },
+  {
+    name: "backend",
+    tech: ["Next API Routes", "NextAuth", "Middleware"],
+  },
+  {
+    name: "testing",
+    tech: ["Jest", "Playwright"],
+  },
+];
+
+export const iMovieSourceCode = [
+  {
+    name: "github",
+    icon: "/sourcecode/github.png",
+    href: "https://github.com/ewadusDev/mappy.git",
+  },
+  {
+    name: "docker",
+    icon: "/sourcecode/docker.png",
+    href: "https://hub.docker.com/r/ewadus/mappy",
+  },
+];

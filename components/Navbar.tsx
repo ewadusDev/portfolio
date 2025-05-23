@@ -12,7 +12,7 @@ const menuList = [
   { name: "Contact", href: "#contact" },
 ];
 
-const Navbar = () => {
+const Navbar = ({ className }: { className?: string }) => {
   const [isToggled, setIsToggled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
 
@@ -45,9 +45,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex w-full px-2 lg:px-6 h-16 items-center border-b fixed bg-white z-50">
+    <nav
+      className={`flex w-full px-2 lg:px-6 h-16 items-center border-b ${
+        className ? className : ""
+      }  bg-white z-50`}
+    >
       <div className="flex justify-between w-full h-full items-center">
-        <h6 className="text-2xl font-extrabold">RK.</h6>
+        <h6 className="text-2xl font-extrabold hover:cursor-pointer">RK.</h6>
 
         {/* Desktop Menu */}
         <ul className="gap-7 hidden sm:flex">

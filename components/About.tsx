@@ -1,6 +1,9 @@
 const About = () => {
   return (
-    <section className="h-[calc(100vh)] border-t" id="about">
+    <section
+      className="h-[calc(100vh)] border-t text-white bg-black"
+      id="about"
+    >
       <div className="flex flex-col lg:flex-row w-full h-full">
         {/* left */}
         <div className="basis-2/4 py-14">
