@@ -64,7 +64,7 @@ const EducationCarousel = ({ data }: { data: Education[] }) => {
                       src={edu.logo}
                     />
                   </div>
-                  <ul className="list-disc text-justify basis-3/4 px-7 text-sm sm:text-lg xl:text-2xl 2xl:text-4xl text-gray-400 ">
+                  <ul className="list-disc text-justify basis-3/4 px-7 text-sm sm:text-lg xl:text-2xl 2xl:text-4xl text-gray-400 2xl:px-10">
                     {edu.description
                       .split(/\n|<br\s*\/?>/i)
                       .filter((line) => line.trim() !== "")

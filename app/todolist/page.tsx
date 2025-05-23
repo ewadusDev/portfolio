@@ -8,35 +8,28 @@ import { RxArrowLeft, RxArrowRight } from "react-icons/rx";
 import "../../components/ui/css/embla.css";
 
 const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true };
-const SLIDE_COUNT = 5;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 const IMoviePage = () => {
   return (
     <>
       <Navbar />
-      <main className="h-[calc(100vh-64px)]">
+      <main className="2xl:h-[calc(100vh-64px)]">
         <div className="w-full h-full bg-black flex flex-col">
-          <div className="flex  w-full h-full ">
-            <EmblaCarousel
-              slides={SLIDES}
-              options={OPTIONS}
-              images={todoData}
-            />
+          <div className="flex w-full h-full ">
+            <EmblaCarousel options={OPTIONS} images={todoData} />
           </div>
-
           <div className="border-t w-full h-full flex-col">
-            <div className="h-5/6 flex flex-row">
+            <div className="2xl:h-5/6 flex flex-col 2xl:flex-row ">
               <div className="h-full basis-2/3 flex bg-white">
-                <div className="w-28  text-white bg-black font-bold text-3xl ">
+                <div className="w-28 px-2 py-3 text-white bg-black font-bold text-3xl 2xl:w-52 2xl:text-4xl">
                   Tech Stack
                 </div>
-                <div className="flex w-full">
+                <div className="flex flex-col 2xl:flex-row w-full">
                   {todoTechStack.map((item, index) => {
                     return (
                       <div className="flex w-full" key={index}>
                         <p
-                          className=" w-fit bg-[#0AB274] text-white font-semibold text-xl uppercase text-center"
+                          className=" w-fit bg-[#0AB274] text-white font-semibold text-xl uppercase text-center 2xl:py-7 2xl:text-2xl"
                           style={{
                             writingMode: "vertical-rl",
                             textOrientation: "upright",
@@ -44,7 +37,7 @@ const IMoviePage = () => {
                         >
                           {item.name}
                         </p>
-                        <ul className="list-disc  w-full p-8 text-xl">
+                        <ul className="list-disc  w-full p-8 text-xl 2xl:text-2xl">
                           {item.tech.map((tech, index) => {
                             return <li key={index}>{tech}</li>;
                           })}
@@ -55,7 +48,7 @@ const IMoviePage = () => {
                 </div>
               </div>
               <div className="h-full basis-1/3 flex">
-                <div className="w-28  text-white bg-black font-bold text-3xl ">
+                <div className="w-28 px-2 py-3 text-white bg-black font-bold text-3xl 2xl:w-52 2xl:text-4xl">
                   Source Code
                 </div>
 
@@ -69,8 +62,8 @@ const IMoviePage = () => {
                         <Link href={item.href} target="_blank">
                           <Image
                             src={item.icon}
-                            width={100}
-                            height={100}
+                            width={130}
+                            height={130}
                             alt={item.name}
                           />
                         </Link>
@@ -81,15 +74,15 @@ const IMoviePage = () => {
                 </div>
               </div>
             </div>
-            <div className="h-1/6 bg-white flex hover:cursor-pointer text-[#0AB274]">
+            <div className="h-32 2xl:h-1/6 bg-white flex hover:cursor-pointer text-[#0AB274]">
               <Link
-                href={"/imovie"}
+                href={"/mappy"}
                 className="w-full h-full flex justify-center items-center text-2xl gap-2 border hover:bg-gray-300"
               >
                 <RxArrowLeft size={28} /> Mappy
               </Link>
               <Link
-                href={"/todolist"}
+                href={"/imovie"}
                 className="w-full h-full flex justify-center items-center text-2xl gap-2 border hover:bg-gray-300"
               >
                 iMovie

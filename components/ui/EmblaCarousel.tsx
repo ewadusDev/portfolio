@@ -17,13 +17,12 @@ import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
 const TWEEN_FACTOR_BASE = 0.2;
 
 type PropType = {
-  slides: number[];
   options?: EmblaOptionsType;
   images: string[];
 };
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
-  const { slides, options, images } = props;
+  const { options, images } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const tweenFactor = useRef(0);
   const tweenNodes = useRef<HTMLElement[]>([]);
@@ -104,7 +103,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaApi, tweenParallax]);
 
   return (
-    <div className="embla  py-3 ">
+    <div className="embla  py-3 px-3 ">
       <div className="overflow-hidden " ref={emblaRef}>
         <div className="embla__container ">
           {images.map((image, index) => (

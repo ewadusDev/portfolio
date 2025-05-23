@@ -51,7 +51,9 @@ const Navbar = ({ className }: { className?: string }) => {
       }  bg-white z-50`}
     >
       <div className="flex justify-between w-full h-full items-center">
-        <h6 className="text-2xl font-extrabold hover:cursor-pointer">RK.</h6>
+        <Link className="text-2xl font-extrabold hover:cursor-pointer" href="/">
+          RK.
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="gap-7 hidden sm:flex">
