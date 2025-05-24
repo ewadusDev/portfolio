@@ -215,7 +215,13 @@ export const skills = [
   },
 ];
 
-export const mappyData = ["/showcase/imageA.jpg", "/showcase/imageA.jpg"];
+export const mappyData = [
+  "/showcase/mappy/mappy_a.webp",
+  "/showcase/mappy/mappy_b.webp",
+  "/showcase/mappy/mappy_c.webp",
+  "/showcase/mappy/mappy_d.webp",
+  "/showcase/mappy/mappy_e.webp",
+];
 
 export const mappyTechStack = [
   {
