@@ -251,7 +251,16 @@ export const mappySourceCode = [
   },
 ];
 
-export const todoData = ["/showcase/imageA.jpg", "/showcase/imageA.jpg"];
+export const todoData = [
+  "/showcase/todolist/todolist_a.webp",
+  "/showcase/todolist/todolist_b.webp",
+  "/showcase/todolist/todolist_c.webp",
+  "/showcase/todolist/todolist_d.webp",
+  "/showcase/todolist/todolist_e.webp",
+  "/showcase/todolist/todolist_f.webp",
+  "/showcase/todolist/todolist_g.webp",
+  "/showcase/todolist/todolist_h.webp",
+];
 
 export const todoTechStack = [
   {

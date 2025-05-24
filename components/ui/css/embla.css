@@ -122,4 +122,5 @@
   max-width: none;
   flex: 0 0 calc(115% + (var(--slide-spacing) * 2));
   object-fit: cover;
+  object-position: 50% 5%;
 }
