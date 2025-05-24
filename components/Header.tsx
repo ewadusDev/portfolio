@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { RxDownload } from "react-icons/rx";
 
 const Header = () => {
@@ -24,9 +25,12 @@ const Header = () => {
               <RxDownload />
               Resume
             </button>
-            <button className="px-10 py-5 lg:px-16 lg:py-5 border flex items-center">
+            <Link
+              href="#showcase"
+              className="px-10 py-5 lg:px-16 lg:py-5 border flex items-center"
+            >
               Showcase
-            </button>
+            </Link>
           </div>
         </div>
         {/* Right */}

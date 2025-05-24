@@ -15,25 +15,34 @@ const Showcase = () => {
                 objectFit="cover"
                 objectPosition="top"
                 alt="todolist"
-                className=" object-cover hover:scale-105 transition-transform duration-300 "
+                className=" object-cover hover:scale-105 transition-transform duration-300 xl:blur-[2px] hover:blur-none"
               />
             </Link>
           </div>
           <div className="h-full relative">
-            <Link href={"/mappy"}>
+            <Link href={"/imovie"}>
               <Image
-                src={"/showcase/mappy/mappy_e.webp"}
+                src={"/showcase/imovie/imovie_f.webp"}
                 fill
                 objectFit="cover"
                 objectPosition="top"
                 alt="todolist"
-                className=" object-cover hover:scale-105 transition-transform duration-300 "
+                className=" object-cover hover:scale-105 transition-transform duration-300 xl:blur-[2px] hover:blur-none"
               />
             </Link>
           </div>
         </div>
-        <div className="basis-1/3 lg:basis-1/2">
-          <Link href="/todolist">todolist</Link>
+        <div className="basis-1/3 lg:basis-1/2 relative">
+          <Link href={"/mappy"}>
+            <Image
+              src={"/showcase/mappy/mappy_e.webp"}
+              fill
+              objectFit="cover"
+              objectPosition="center"
+              alt="todolist"
+              className=" object-cover hover:scale-105 transition-transform duration-300 xl:blur-[2px] hover:blur-none"
+            />
+          </Link>
         </div>
       </div>
     </section>

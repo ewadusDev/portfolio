@@ -232,11 +232,12 @@ export const mappyTechStack = [
       "react-icons",
       "leaflet",
       "React-Leaflet",
+      "Shadcn",
     ],
   },
   {
     name: "backend",
-    tech: ["Next API Routes", "NextAuth", "Middleware"],
+    tech: ["Bun", "Next API Routes", "Postgres", "minio", "drizzle", "axios"],
   },
   {
     name: "testing",
@@ -271,17 +272,18 @@ export const todoData = [
 export const todoTechStack = [
   {
     name: "frontend",
-    tech: [
-      "Next.js",
-      "Tailwind CSS",
-      "react-icons",
-      "leaflet",
-      "React-Leaflet",
-    ],
+    tech: ["Next.js", "Tailwind CSS", "react-icons", "Zod"],
   },
   {
     name: "backend",
-    tech: ["Next API Routes", "NextAuth", "Middleware"],
+    tech: [
+      "NodeJS",
+      "Next API Routes",
+      "NextAuth",
+      "Middleware",
+      "Postgres",
+      "Cron Job",
+    ],
   },
   {
     name: "testing",
@@ -293,35 +295,46 @@ export const todoSourceCode = [
   {
     name: "github",
     icon: "/sourcecode/github.png",
-    href: "https://github.com/ewadusDev/mappy.git",
+    href: "https://github.com/ewadusDev/todo-list.git",
   },
   {
     name: "docker",
     icon: "/sourcecode/docker.png",
-    href: "https://hub.docker.com/r/ewadus/mappy",
+    href: "https://hub.docker.com/r/ewadus/todo-app",
   },
 ];
 
-export const iMovieData = ["/showcase/imageA.jpg", "/showcase/imageA.jpg"];
+export const iMovieData = [
+  "/showcase/imovie/imovie_a.webp",
+  "/showcase/imovie/imovie_b.webp",
+  "/showcase/imovie/imovie_c.webp",
+  "/showcase/imovie/imovie_d.webp",
+  "/showcase/imovie/imovie_f.webp",
+  "/showcase/imovie/imovie_g.webp",
+  "/showcase/imovie/imovie_h.webp",
+];
 
 export const iMovieTechStack = [
   {
     name: "frontend",
-    tech: [
-      "Next.js",
-      "Tailwind CSS",
-      "react-icons",
-      "leaflet",
-      "React-Leaflet",
-    ],
+    tech: ["Next.js", "Tailwind CSS", "react-icons", "hls-player"],
   },
   {
     name: "backend",
-    tech: ["Next API Routes", "NextAuth", "Middleware"],
+    tech: [
+      "NodeJS",
+      "Next API Routes",
+      "Prisma",
+      "NextAuth",
+      "Middleware",
+      "mongoose",
+      "Mongodb",
+      "minio",
+    ],
   },
   {
     name: "testing",
-    tech: ["Jest", "Playwright"],
+    tech: ["Jest", "Robot Framework"],
   },
 ];
 
@@ -329,11 +342,6 @@ export const iMovieSourceCode = [
   {
     name: "github",
     icon: "/sourcecode/github.png",
-    href: "https://github.com/ewadusDev/mappy.git",
-  },
-  {
-    name: "docker",
-    icon: "/sourcecode/docker.png",
-    href: "https://hub.docker.com/r/ewadus/mappy",
+    href: "https://github.com/ewadusDev/iMovie.git",
   },
 ];
