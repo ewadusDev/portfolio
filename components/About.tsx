@@ -7,7 +7,7 @@ const About = () => {
       <div className="flex flex-col lg:flex-row w-full h-full">
         {/* left */}
         <div className="basis-2/4 py-14">
-          <p className="px-6 text-7xl xl:text-9xl lg:p-14 ">I' AM</p>
+          <p className="px-6 text-7xl xl:text-9xl lg:p-14 ">I&apos; AM</p>
           <p className="text-justify px-3 mt-4 text-xl 2xl:text-3xl">
             a Senior QA Automation Engineer with strong expertise in building
             and maintaining scalable test automation frameworks to ensure
