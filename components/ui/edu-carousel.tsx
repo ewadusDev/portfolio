@@ -155,7 +155,6 @@ function CarouselContent({ className, ...props }: React.ComponentProps<"div">) {
 
 function CarouselItem({ className, ...props }: React.ComponentProps<"div">) {
   const { orientation } = useCarousel();
-
   return (
     <div
       role="group"
@@ -181,7 +180,7 @@ function CarouselPrevious({
     <button
       data-slot="carousel-previous"
       className={cn(
-        "text-6xl w-full h-36 border-b flex items-center justify-center",
+        "text-6xl w-full h-36 border-b flex items-center justify-center border",
         orientation === "horizontal"
           ? "top-1/2 -left-12"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -207,7 +206,7 @@ function CarouselNext({
     <button
       data-slot="carousel-next"
       className={cn(
-        "text-6xl w-full h-36 border-b border-l flex items-center justify-center",
+        "text-6xl w-full h-36 border-b border-l flex items-center justify-center border",
         orientation === "horizontal"
           ? "top-1/2 -right-12"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",

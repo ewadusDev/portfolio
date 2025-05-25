@@ -12,7 +12,7 @@ import Image from "next/image";
 const EducationCarousel = ({ data }: { data: Education[] }) => {
   return (
     <Carousel
-      className="w-full h-full 2xl:h-screen flex flex-col"
+      className="w-full h-full xl:h-screen flex flex-col"
       plugins={[
         Autoplay({
           delay: 9000,
@@ -40,7 +40,7 @@ const EducationCarousel = ({ data }: { data: Education[] }) => {
                       {index > 8 ? index + 1 : `0${index + 1}`}
                     </p>
                   </div>
-                  <div className=" basis-3/4">
+                  <div className="basis-3/4">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl  xl:text-6xl  font-semibold">
                       {edu.name}
                     </h2>
@@ -55,11 +55,12 @@ const EducationCarousel = ({ data }: { data: Education[] }) => {
                   </div>
                 </div>
                 {/* logo */}
-                <div className="flex mt-4 2xl:mt-40 items-center ">
-                  <div className=" basis-1/4 h-56 object-contain flex justify-center items-center">
+                <div className="flex 2xl:h-[600px]  items-center">
+                  <div className="basis-1/4 h-64 object-contain flex justify-center items-center">
                     <Image
-                      width={1000}
-                      height={1000}
+                      width={500}
+                      height={500}
+                      objectFit=""
                       alt={edu.name}
                       src={edu.logo}
                     />

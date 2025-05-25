@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { Button } from "./ui/button";
+import { usePathname } from "next/navigation";
 
 const menuList = [
   { name: "About", href: "#about" },
@@ -15,6 +16,9 @@ const menuList = [
 const Navbar = ({ className }: { className?: string }) => {
   const [isToggled, setIsToggled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const pathname = usePathname();
+
+  console.log(pathname);
 
   useEffect(() => {
     const observerOptions = {
@@ -55,58 +59,18 @@ const Navbar = ({ className }: { className?: string }) => {
           RK.
         </Link>
 
-        {/* Desktop Menu */}
-        <ul className="gap-7 hidden sm:flex">
-          {menuList.map((item, index) => {
-            const isActive = activeSection === item.href;
-            return (
-              <li
-                key={index}
-                className={`hover:underline transition ${
-                  isActive ? "text-[#0AB274] font-semibold" : ""
-                }`}
-              >
-                <Link href={item.href} scroll={true}>
-                  {item.name}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-
-        {/* Mobile Toggle */}
-        <div className="sm:hidden">
-          <Button
-            variant={"outline"}
-            size={"icon"}
-            onClick={() => setIsToggled(!isToggled)}
-          >
-            <RxHamburgerMenu />
-          </Button>
-        </div>
-
-        {/* Mobile Menu */}
-        {isToggled && (
-          <div className="absolute w-full h-full top-0 left-0 bg-white z-50">
-            <div className="px-6 h-16 flex items-center justify-end">
-              <Button
-                variant={"outline"}
-                size={"icon"}
-                onClick={() => setIsToggled(false)}
-              >
-                <RxCross1 />
-              </Button>
-            </div>
-            <ul className="flex flex-col justify-start items-center gap-5 pt-7 bg-white z-50 h-screen">
+        {pathname === "/" && (
+          <>
+            {/* Desktop Menu */}
+            <ul className="gap-7 hidden sm:flex">
               {menuList.map((item, index) => {
                 const isActive = activeSection === item.href;
                 return (
                   <li
                     key={index}
-                    className={`text-3xl ${
-                      isActive ? "text-blue-600 font-bold underline" : ""
+                    className={`hover:underline transition ${
+                      isActive ? "text-[#0AB274] font-semibold" : ""
                     }`}
-                    onClick={handleClick}
                   >
                     <Link href={item.href} scroll={true}>
                       {item.name}
@@ -115,7 +79,51 @@ const Navbar = ({ className }: { className?: string }) => {
                 );
               })}
             </ul>
-          </div>
+
+            {/* Mobile Toggle */}
+            <div className="sm:hidden">
+              <Button
+                variant={"outline"}
+                size={"icon"}
+                onClick={() => setIsToggled(!isToggled)}
+              >
+                <RxHamburgerMenu />
+              </Button>
+            </div>
+
+            {/* Mobile Menu */}
+            {isToggled && (
+              <div className="absolute w-full h-full top-0 left-0 bg-white z-50">
+                <div className="px-6 h-16 flex items-center justify-end">
+                  <Button
+                    variant={"outline"}
+                    size={"icon"}
+                    onClick={() => setIsToggled(false)}
+                  >
+                    <RxCross1 />
+                  </Button>
+                </div>
+                <ul className="flex flex-col justify-start items-center gap-5 pt-7 bg-white z-50 h-screen">
+                  {menuList.map((item, index) => {
+                    const isActive = activeSection === item.href;
+                    return (
+                      <li
+                        key={index}
+                        className={`text-3xl ${
+                          isActive ? "text-blue-600 font-bold underline" : ""
+                        }`}
+                        onClick={handleClick}
+                      >
+                        <Link href={item.href} scroll={true}>
+                          {item.name}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
+          </>
         )}
       </div>
     </nav>
