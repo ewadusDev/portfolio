@@ -3,7 +3,7 @@ import { RxDownload } from "react-icons/rx";
 
 const Header = () => {
   return (
-    <header className="h-screen" id="hea">
+    <header className="h-screen">
       <div className="h-full flex flex-col lg:px-0 lg:flex-row ">
         {/* Left */}
         <div className="flex flex-col justify-between gap-16 lg:gap-10 xl:gap-16 pt-5 pb-20 lg:pb-28 lg:basis-2/3 lg:p-12 px-2 sm:px-4 ">
@@ -21,10 +21,14 @@ const Header = () => {
             interactive experiences.
           </h3>
           <div className="flex items-center gap-3 sm:text-2xl">
-            <button className="px-10 py-5 lg:px-16 lg:py-5 flex items-center text-white font-medium bg-[#0AB274] gap-2">
+            <Link
+              href={"https://ruknakub.com/files/QA_Ruk_Keosung_Resume.pdf"}
+              target="_blank"
+              className="px-10 py-5 lg:px-16 lg:py-5 flex items-center text-white font-medium bg-[#0AB274] gap-2"
+            >
               <RxDownload />
               Resume
-            </button>
+            </Link>
             <Link
               href="#showcase"
               className="px-10 py-5 lg:px-16 lg:py-5 border flex items-center"
