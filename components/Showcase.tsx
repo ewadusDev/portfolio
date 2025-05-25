@@ -31,7 +31,7 @@ const Showcase = () => {
           </div>
 
           <div className="h-full relative group overflow-hidden">
-            <Link href="/todolist">
+            <Link href="/imovie">
               <div className="relative w-full h-full transition-transform duration-300 group-hover:scale-105">
                 <Image
                   src="/showcase/imovie/imovie_f_black.jpg"
