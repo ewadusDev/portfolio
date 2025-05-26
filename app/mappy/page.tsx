@@ -13,7 +13,7 @@ const IMoviePage = () => {
   return (
     <>
       <Navbar />
-      <main className="2xl:h-[calc(100vh-64px)]">
+      <main className="container-app">
         <div className="flex h-full w-full flex-col bg-black">
           <div className="flex h-full w-full">
             <EmblaCarousel options={OPTIONS} images={mappyData} />
@@ -21,15 +21,13 @@ const IMoviePage = () => {
           <div className="h-full w-full flex-col border-t">
             <div className="flex flex-col 2xl:h-5/6 2xl:flex-row">
               <div className="flex h-full basis-2/3 bg-white">
-                <div className="w-28 bg-black px-2 py-3 text-3xl font-bold text-white 2xl:w-52 2xl:text-4xl">
-                  Tech Stack
-                </div>
+                <div className="title-apps">Tech Stack</div>
                 <div className="flex w-full flex-col 2xl:flex-row">
                   {mappyTechStack.map((item, index) => {
                     return (
                       <div className="flex w-full" key={index}>
                         <p
-                          className="w-fit bg-[#0AB274] text-center text-xl font-semibold text-white uppercase 2xl:py-7 2xl:text-2xl"
+                          className="itemlist-apps"
                           style={{
                             writingMode: "vertical-rl",
                             textOrientation: "upright",
@@ -48,9 +46,7 @@ const IMoviePage = () => {
                 </div>
               </div>
               <div className="flex h-full basis-1/3">
-                <div className="w-28 bg-black px-2 py-3 text-3xl font-bold text-white 2xl:w-52 2xl:text-4xl">
-                  Source Code
-                </div>
+                <div className="title-apps">Source Code</div>
 
                 <div className="flex h-full w-full bg-white">
                   {mappySourceCode.map((item, index) => {
@@ -74,17 +70,11 @@ const IMoviePage = () => {
                 </div>
               </div>
             </div>
-            <div className="flex h-32 bg-white text-[#0AB274] hover:cursor-pointer 2xl:h-1/6">
-              <Link
-                href={"/imovie"}
-                className="flex h-full w-full items-center justify-center gap-2 border text-2xl hover:bg-gray-300"
-              >
+            <div className="nav-apps">
+              <Link href={"/imovie"} className="nav-apps-button">
                 <RxArrowLeft size={28} /> iMovie
               </Link>
-              <Link
-                href={"/todolist"}
-                className="flex h-full w-full items-center justify-center gap-2 border text-2xl hover:bg-gray-300"
-              >
+              <Link href={"/todolist"} className="nav-apps-button">
                 To-do List
                 <RxArrowRight size={28} />
               </Link>

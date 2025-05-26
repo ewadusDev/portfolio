@@ -3,12 +3,12 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-[#0AB274] text-white" id="contact">
-      <div className="flex flex-col lg:flex-row">
-        <div className="border-b border-white py-4 lg:border-r lg:border-b-0 lg:px-8">
+      <div className="footer-container">
+        <div className="footer-headline-container">
           <p className="px-4 py-4 text-9xl font-bold">RK.</p>
         </div>
         <div>
-          <div className="flex h-full w-full flex-col gap-2 px-4 py-5 lg:flex-row lg:items-center lg:justify-center lg:gap-10">
+          <div className="footer-contact">
             <div>
               <p className="text-xl">Contact</p>
             </div>

@@ -122,3 +122,148 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .topnav-container {
+    @apply flex h-16 w-full items-center border-b px-2 lg:px-6;
+  }
+  .topnav-logo {
+    @apply flex h-full w-full items-center justify-between;
+  }
+  .topnav-logo-link {
+    @apply font-extrabold hover:cursor-pointer;
+  }
+
+  .container-app {
+    @apply 2xl:h-[calc(100vh-64px)];
+  }
+  .nav-apps {
+    @apply flex h-32 bg-white text-[#0AB274] hover:cursor-pointer 2xl:h-1/6;
+  }
+  .nav-apps-button {
+    @apply flex h-full w-full items-center justify-center gap-2 border text-2xl hover:bg-gray-300;
+  }
+  .itemlist-apps {
+    @apply w-fit bg-[#0AB274] text-center text-xl font-semibold text-white uppercase 2xl:py-7 2xl:text-2xl;
+  }
+  .title-apps {
+    @apply w-28 bg-black px-2 py-3 text-3xl font-bold text-white 2xl:w-52 2xl:text-4xl;
+  }
+
+  /* Header Section*/
+  .header-left-section {
+    @apply flex flex-col justify-between gap-16 px-2 pt-5 pb-20 sm:px-4 lg:basis-2/3 lg:gap-10 lg:p-12 lg:pb-28 xl:gap-16;
+  }
+  .header-h1 {
+    @apply mt-[64px] text-7xl font-extrabold md:text-9xl xl:text-9xl;
+  }
+  .header-h2 {
+    @apply mt-4 text-3xl font-bold md:text-5xl;
+  }
+  .header-btn-green-link {
+    @apply flex items-center gap-2 bg-[#0AB274] px-10 py-5 font-medium text-white lg:px-16 lg:py-5;
+  }
+  .header-btn-white {
+    @apply flex items-center border px-10 py-5 lg:px-16 lg:py-5;
+  }
+  .header-bg-profile {
+    @apply h-[calc(100vh/2)] w-full bg-gray-300 md:h-[calc(100vh)] lg:h-full lg:basis-1/3;
+  }
+
+  /* Skill Section */
+  .skill-container {
+    @apply flex flex-col lg:flex-row;
+  }
+  .skill-left-section {
+    @apply border-b border-gray-300 lg:h-96 lg:basis-2/5 lg:border-r;
+  }
+  .skill-h2 {
+    @apply h-full px-6 py-8 text-7xl lg:p-14 lg:text-9xl;
+  }
+  .skill-right-section {
+    @apply h-screen overflow-auto scroll-smooth lg:basis-4/5;
+  }
+  .skill-slider {
+    @apply hidden h-96 w-full border-b border-gray-300 lg:block;
+  }
+  .skill-slider-skills-container {
+    @apply flex basis-3/4 border-b border-gray-200 py-10 sm:py-16;
+  }
+  .skill-number {
+    @apply mx-auto w-fit rounded-4xl border border-[#0AB274] px-4 py-1 lg:text-2xl;
+  }
+
+  /* Showcases page */
+  .showcase-container {
+    @apply flex h-full flex-col lg:flex-row;
+  }
+  .showcase-left-section {
+    @apply flex basis-2/3 flex-col border-b border-gray-600 lg:basis-1/2 lg:border-r lg:border-b-0;
+  }
+  .showcase-left-container {
+    @apply relative h-full overflow-hidden;
+  }
+  .showcase-left-img-container {
+    @apply relative h-full w-full transition-transform duration-300 group-hover:scale-105;
+  }
+  .showcase-right-img-container {
+    @apply relative basis-1/3 overflow-hidden lg:basis-1/2;
+  }
+  .showcase-left-img-default {
+    @apply object-cover opacity-100 transition-opacity duration-300;
+  }
+  .showcase-left-img-container-hover {
+    @apply object-cover opacity-0 transition-opacity duration-500 hover:scale-105;
+  }
+
+  /* Education Section */
+  .edu-container {
+    @apply flex h-full w-full flex-col lg:flex-row;
+  }
+  .edu-h3 {
+    @apply h-full border-r px-6 py-8 text-7xl sm:text-8xl lg:p-14 xl:text-9xl;
+  }
+  .edu-number {
+    @apply w-14 rounded-4xl border border-[#0AB274] text-center lg:text-2xl;
+  }
+  .edu-name {
+    @apply text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl;
+  }
+  .edu-major-container {
+    @apply mt-2 flex justify-between text-xl font-medium lg:text-3xl;
+  }
+  .edu-logo-container {
+    @apply flex items-center 2xl:h-[600px];
+  }
+  .edu-img-container {
+    @apply flex h-64 basis-1/4 items-center justify-center object-contain;
+  }
+  .edu-list-container {
+    @apply basis-3/4 list-disc px-7 text-justify text-sm text-gray-400 sm:text-lg xl:text-2xl 2xl:px-10 2xl:text-4xl;
+  }
+
+  /* About Section */
+  .about-container {
+    @apply h-[calc(100vh)] border-t bg-black text-white;
+  }
+  .about-box {
+    @apply flex h-full w-full flex-col lg:flex-row;
+  }
+  .about-head3 {
+    @apply px-6 text-7xl lg:p-14 xl:text-9xl;
+  }
+  .about-para {
+    @apply mt-4 px-3 text-justify text-xl 2xl:text-3xl;
+  }
+
+  /* Footer Section */
+  .footer-container {
+    @apply flex flex-col lg:flex-row;
+  }
+  .footer-headline-container {
+    @apply border-b border-white py-4 lg:border-r lg:border-b-0 lg:px-8;
+  }
+  .footer-contact {
+    @apply flex h-full w-full flex-col gap-2 px-4 py-5 lg:flex-row lg:items-center lg:justify-center lg:gap-10;
+  }
+}

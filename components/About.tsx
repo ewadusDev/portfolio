@@ -1,14 +1,11 @@
 const About = () => {
   return (
-    <section
-      className="h-[calc(100vh)] border-t bg-black text-white"
-      id="about"
-    >
-      <div className="flex h-full w-full flex-col lg:flex-row">
+    <section className="about-container" id="about">
+      <div className="about-box">
         {/* left */}
         <div className="basis-2/4 py-14">
-          <p className="px-6 text-7xl lg:p-14 xl:text-9xl">I&apos; AM</p>
-          <p className="mt-4 px-3 text-justify text-xl 2xl:text-3xl">
+          <h3 className="about-head3">I&apos; AM</h3>
+          <p className="about-para">
             a Senior QA Automation Engineer with strong expertise in building
             and maintaining scalable test automation frameworks to ensure
             software quality across web and backend systems. With a

@@ -36,15 +36,13 @@ const EducationCarousel = ({ data }: { data: Education[] }) => {
                 {/* title */}
                 <div className="flex flex-row py-7">
                   <div className="flex basis-1/4 items-start justify-center">
-                    <p className="w-14 rounded-4xl border border-[#0AB274] text-center lg:text-2xl">
+                    <p className="edu-number">
                       {index > 8 ? index + 1 : `0${index + 1}`}
                     </p>
                   </div>
                   <div className="basis-3/4">
-                    <h2 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">
-                      {edu.name}
-                    </h2>
-                    <div className="mt-2 flex justify-between text-xl font-medium lg:text-3xl">
+                    <h2 className="edu-name">{edu.name}</h2>
+                    <div className="edu-major-container">
                       <p>{edu.major}</p>
                       <p>{edu.location}</p>
                     </div>
@@ -55,17 +53,16 @@ const EducationCarousel = ({ data }: { data: Education[] }) => {
                   </div>
                 </div>
                 {/* logo */}
-                <div className="flex items-center 2xl:h-[600px]">
-                  <div className="flex h-64 basis-1/4 items-center justify-center object-contain">
+                <div className="edu-logo-container">
+                  <div className="edu-img-container">
                     <Image
                       width={500}
                       height={500}
-                      objectFit=""
                       alt={edu.name}
                       src={edu.logo}
                     />
                   </div>
-                  <ul className="basis-3/4 list-disc px-7 text-justify text-sm text-gray-400 sm:text-lg xl:text-2xl 2xl:px-10 2xl:text-4xl">
+                  <ul className="edu-list-container">
                     {edu.description
                       .split(/\n|<br\s*\/?>/i)
                       .filter((line) => line.trim() !== "")

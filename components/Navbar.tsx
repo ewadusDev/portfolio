@@ -50,12 +50,10 @@ const Navbar = ({ className }: { className?: string }) => {
 
   return (
     <nav
-      className={`flex h-16 w-full items-center border-b px-2 lg:px-6 ${
-        className ? className : ""
-      } z-50 bg-white`}
+      className={`topnav-container ${className ? className : ""} z-50 bg-white`}
     >
-      <div className="flex h-full w-full items-center justify-between">
-        <Link className="text-2xl font-extrabold hover:cursor-pointer" href="/">
+      <div className="topnav-logo flex">
+        <Link className="topnav-logo-link text-2xl" href="/">
           RK.
         </Link>
 
