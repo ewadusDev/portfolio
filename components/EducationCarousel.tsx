@@ -12,18 +12,18 @@ import Image from "next/image";
 const EducationCarousel = ({ data }: { data: Education[] }) => {
   return (
     <Carousel
-      className="w-full h-full xl:h-screen flex flex-col"
+      className="flex h-full w-full flex-col xl:h-screen"
       plugins={[
         Autoplay({
           delay: 9000,
         }),
       ]}
     >
-      <div className="flex justify-between basis-1/3">
-        <div className="w-full items-center justify-center flex ">
+      <div className="flex basis-1/3 justify-between">
+        <div className="flex w-full items-center justify-center">
           <CarouselPrevious className="" />
         </div>
-        <div className="w-full items-center justify-center flex ">
+        <div className="flex w-full items-center justify-center">
           <CarouselNext />
         </div>
       </div>
@@ -34,17 +34,17 @@ const EducationCarousel = ({ data }: { data: Education[] }) => {
             <CarouselItem key={index} className="w-1">
               <div className="flex flex-col px-3">
                 {/* title */}
-                <div className="flex flex-row  py-7 ">
-                  <div className="flex items-start justify-center basis-1/4 ">
-                    <p className="rounded-4xl border border-[#0AB274] lg:text-2xl w-14 text-center">
+                <div className="flex flex-row py-7">
+                  <div className="flex basis-1/4 items-start justify-center">
+                    <p className="w-14 rounded-4xl border border-[#0AB274] text-center lg:text-2xl">
                       {index > 8 ? index + 1 : `0${index + 1}`}
                     </p>
                   </div>
                   <div className="basis-3/4">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl  xl:text-6xl  font-semibold">
+                    <h2 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">
                       {edu.name}
                     </h2>
-                    <div className="flex text-xl lg:text-3xl font-medium justify-between mt-2">
+                    <div className="mt-2 flex justify-between text-xl font-medium lg:text-3xl">
                       <p>{edu.major}</p>
                       <p>{edu.location}</p>
                     </div>
@@ -55,8 +55,8 @@ const EducationCarousel = ({ data }: { data: Education[] }) => {
                   </div>
                 </div>
                 {/* logo */}
-                <div className="flex 2xl:h-[600px]  items-center">
-                  <div className="basis-1/4 h-64 object-contain flex justify-center items-center">
+                <div className="flex items-center 2xl:h-[600px]">
+                  <div className="flex h-64 basis-1/4 items-center justify-center object-contain">
                     <Image
                       width={500}
                       height={500}
@@ -65,7 +65,7 @@ const EducationCarousel = ({ data }: { data: Education[] }) => {
                       src={edu.logo}
                     />
                   </div>
-                  <ul className="list-disc text-justify basis-3/4 px-7 text-sm sm:text-lg xl:text-2xl 2xl:text-4xl text-gray-400 2xl:px-10">
+                  <ul className="basis-3/4 list-disc px-7 text-justify text-sm text-gray-400 sm:text-lg xl:text-2xl 2xl:px-10 2xl:text-4xl">
                     {edu.description
                       .split(/\n|<br\s*\/?>/i)
                       .filter((line) => line.trim() !== "")

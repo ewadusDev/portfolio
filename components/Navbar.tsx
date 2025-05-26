@@ -50,11 +50,11 @@ const Navbar = ({ className }: { className?: string }) => {
 
   return (
     <nav
-      className={`flex w-full px-2 lg:px-6 h-16 items-center border-b ${
+      className={`flex h-16 w-full items-center border-b px-2 lg:px-6 ${
         className ? className : ""
-      }  bg-white z-50`}
+      } z-50 bg-white`}
     >
-      <div className="flex justify-between w-full h-full items-center">
+      <div className="flex h-full w-full items-center justify-between">
         <Link className="text-2xl font-extrabold hover:cursor-pointer" href="/">
           RK.
         </Link>
@@ -62,14 +62,14 @@ const Navbar = ({ className }: { className?: string }) => {
         {pathname === "/" && (
           <>
             {/* Desktop Menu */}
-            <ul className="gap-7 hidden sm:flex">
+            <ul className="hidden gap-7 sm:flex">
               {menuList.map((item, index) => {
                 const isActive = activeSection === item.href;
                 return (
                   <li
                     key={index}
-                    className={`hover:underline transition ${
-                      isActive ? "text-[#0AB274] font-semibold" : ""
+                    className={`transition hover:underline ${
+                      isActive ? "font-semibold text-[#0AB274]" : ""
                     }`}
                   >
                     <Link href={item.href} scroll={true}>
@@ -93,8 +93,8 @@ const Navbar = ({ className }: { className?: string }) => {
 
             {/* Mobile Menu */}
             {isToggled && (
-              <div className="absolute w-full h-full top-0 left-0 bg-white z-50">
-                <div className="px-6 h-16 flex items-center justify-end">
+              <div className="absolute top-0 left-0 z-50 h-full w-full bg-white">
+                <div className="flex h-16 items-center justify-end px-6">
                   <Button
                     variant={"outline"}
                     size={"icon"}
@@ -103,14 +103,14 @@ const Navbar = ({ className }: { className?: string }) => {
                     <RxCross1 />
                   </Button>
                 </div>
-                <ul className="flex flex-col justify-start items-center gap-5 pt-7 bg-white z-50 h-screen">
+                <ul className="z-50 flex h-screen flex-col items-center justify-start gap-5 bg-white pt-7">
                   {menuList.map((item, index) => {
                     const isActive = activeSection === item.href;
                     return (
                       <li
                         key={index}
                         className={`text-3xl ${
-                          isActive ? "text-blue-600 font-bold underline" : ""
+                          isActive ? "font-bold text-blue-600 underline" : ""
                         }`}
                         onClick={handleClick}
                       >

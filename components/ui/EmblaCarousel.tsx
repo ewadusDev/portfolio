@@ -84,7 +84,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         });
       });
     },
-    []
+    [],
   );
 
   useEffect(() => {
@@ -103,9 +103,9 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaApi, tweenParallax]);
 
   return (
-    <div className="embla  py-3 px-3 ">
-      <div className="overflow-hidden " ref={emblaRef}>
-        <div className="embla__container ">
+    <div className="embla px-3 py-3">
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="embla__container">
           {images.map((image, index) => (
             <div className="embla__slide" key={index}>
               <div className="embla__parallax">
@@ -133,10 +133,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={" w-5 h-5 spa ".concat(
+              className={"spa h-5 w-5".concat(
                 index === selectedIndex
-                  ? "mx-1 bg-[#0AB274] rounded-full "
-                  : "mx-1 border-2 rounded-full"
+                  ? "mx-1 rounded-full bg-[#0AB274]"
+                  : "mx-1 rounded-full border-2",
               )}
             />
           ))}

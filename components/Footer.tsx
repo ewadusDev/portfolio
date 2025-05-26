@@ -2,13 +2,13 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className=" bg-[#0AB274] text-white" id="contact">
-      <div className="flex flex-col lg:flex-row ">
-        <div className="border-b border-white lg:border-b-0 lg:border-r lg:px-8 py-4 ">
-          <p className="text-9xl font-bold py-4 px-4">RK.</p>
+    <footer className="bg-[#0AB274] text-white" id="contact">
+      <div className="flex flex-col lg:flex-row">
+        <div className="border-b border-white py-4 lg:border-r lg:border-b-0 lg:px-8">
+          <p className="px-4 py-4 text-9xl font-bold">RK.</p>
         </div>
         <div>
-          <div className="flex flex-col lg:flex-row px-4 py-5 gap-2 lg:gap-10 w-full h-full lg:justify-center lg:items-center">
+          <div className="flex h-full w-full flex-col gap-2 px-4 py-5 lg:flex-row lg:items-center lg:justify-center lg:gap-10">
             <div>
               <p className="text-xl">Contact</p>
             </div>
