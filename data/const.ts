@@ -259,6 +259,8 @@ export const mappySourceCode = [
 ];
 
 export const todoData = [
+  "/showcase/todolist/todolist_i.webp",
+  "/showcase/todolist/todolist_j.webp",
   "/showcase/todolist/todolist_a.webp",
   "/showcase/todolist/todolist_b.webp",
   "/showcase/todolist/todolist_c.webp",
@@ -287,7 +289,7 @@ export const todoTechStack = [
   },
   {
     name: "testing",
-    tech: ["Jest", "Playwright"],
+    tech: ["Cypress"],
   },
 ];
 
