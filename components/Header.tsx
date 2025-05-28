@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { RxDownload } from "react-icons/rx";
 
@@ -33,7 +34,15 @@ const Header = () => {
           </div>
         </div>
         {/* Right */}
-        <div className="header-bg-profile" />
+        <div className="header-bg-profile relative">
+          <Image
+            src={"/profile/profile8.PNG"}
+            fill
+            objectFit="cover"
+            objectPosition="50% 10%"
+            alt="profile"
+          />
+        </div>
       </div>
     </header>
   );

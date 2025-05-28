@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const About = () => {
   return (
     <section className="about-container" id="about">
@@ -19,7 +21,15 @@ const About = () => {
           </p>
         </div>
         {/* right */}
-        <div className="basis-2/4 bg-gray-300"></div>
+        <div className="relative basis-2/4 bg-gray-300">
+          <Image
+            src={"/profile/profile9.PNG"}
+            fill
+            objectFit="cover"
+            objectPosition="50% 10%"
+            alt="profile"
+          />
+        </div>
       </div>
     </section>
   );

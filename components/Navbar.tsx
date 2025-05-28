@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
@@ -17,8 +18,6 @@ const Navbar = ({ className }: { className?: string }) => {
   const [isToggled, setIsToggled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const pathname = usePathname();
-
-  console.log(pathname);
 
   useEffect(() => {
     const observerOptions = {
