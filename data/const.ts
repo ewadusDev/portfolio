@@ -307,6 +307,8 @@ export const todoSourceCode = [
 ];
 
 export const iMovieData = [
+  "/showcase/imovie/imovie_i.jpg",
+  "/showcase/imovie/imovie_j.jpg",
   "/showcase/imovie/imovie_a.webp",
   "/showcase/imovie/imovie_b.webp",
   "/showcase/imovie/imovie_c.webp",
@@ -336,7 +338,7 @@ export const iMovieTechStack = [
   },
   {
     name: "testing",
-    tech: ["Jest", "Robot Framework"],
+    tech: ["Playwright"],
   },
 ];
 
@@ -345,5 +347,10 @@ export const iMovieSourceCode = [
     name: "github",
     icon: "/sourcecode/github.png",
     href: "https://github.com/ewadusDev/iMovie.git",
+  },
+  {
+    name: "Playwright",
+    icon: "/sourcecode/github.png",
+    href: "https://github.com/ewadusDev/imovie-playwright",
   },
 ];
