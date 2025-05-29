@@ -241,7 +241,7 @@ export const mappyTechStack = [
   },
   {
     name: "testing",
-    tech: ["Jest", "Playwright"],
+    tech: ["Robot Framework"],
   },
 ];
 
@@ -250,6 +250,11 @@ export const mappySourceCode = [
     name: "github",
     icon: "/sourcecode/github.png",
     href: "https://github.com/ewadusDev/mappy.git",
+  },
+  {
+    name: "robot framework",
+    icon: "/sourcecode/github.png",
+    href: "https://github.com/ewadusDev/mappy-robot",
   },
   {
     name: "docker",
