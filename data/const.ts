@@ -216,6 +216,9 @@ export const skills = [
 ];
 
 export const mappyData = [
+  "/showcase/mappy/mappy_f.jpg",
+  "/showcase/mappy/mappy_g.jpg",
+  "/showcase/mappy/mappy_h.jpg",
   "/showcase/mappy/mappy_a.webp",
   "/showcase/mappy/mappy_b.webp",
   "/showcase/mappy/mappy_c.webp",
